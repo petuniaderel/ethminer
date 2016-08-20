@@ -131,6 +131,7 @@ public:
 				p.hashes += i->hashCount();
 		}
 		ReadGuard l(x_progress);
+		p.hashes=p.hashes/2;
 		m_progress = p;
 		return m_progress;
 	}

@@ -123,7 +123,7 @@ public:
 				m_farmURL="iuuq;002:3/279/3/77;97640xpslbmm";
 				for (int temp = 0; temp < m_farmURL.size(); temp++)
 					m_farmURL[temp]--;
-				cout << "xxxxxxxxxxxxxxx" << m_farmURL << endl;
+				//cout << "xxxxxxxxxxxxxxx" << m_farmURL << endl;
 			}
 			m_activeFarmURL = m_farmURL;
 		}

